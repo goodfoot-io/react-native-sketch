@@ -25,7 +25,7 @@ RCT_EXPORT_MODULE()
 
 RCT_CUSTOM_VIEW_PROPERTY(fillColor, UIColor, RNSketch)
 {
-  [view setFillColor:json ? [RCTConvert UIColor:json] : [UIColor whiteColor]];
+  [view setFillColor:json ? [RCTConvert UIColor:json] : [UIColor clearColor]];
 }
 RCT_CUSTOM_VIEW_PROPERTY(strokeColor, UIColor, RNSketch)
 {
